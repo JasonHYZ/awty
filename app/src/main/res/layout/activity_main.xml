@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/etext"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etext1"
+        android:hint="Message"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:inputType="textCapSentences|textMultiLine"/>
+    <EditText
+        android:id="@+id/etext2"
+        android:hint="Phone Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/etext3"
+        android:hint="Rpeating Interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:digits="0123456789"
+        android:numeric="integer"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/control"
+        android:text="Start"
+        android:textSize="25dp"
+        android:layout_below="@+id/etext"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
